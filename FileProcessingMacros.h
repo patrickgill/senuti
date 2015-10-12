@@ -1,4 +1,4 @@
 #define VERSION 0.50.2
-#define BUILD_DATE 2009-03-26T13:46:53Z
+#define BUILD_DATE 2015-10-12T21:11:13Z
 #define BUILD_REVISION r
-#define BUILD_USER bvarner
+#define BUILD_USER nredko

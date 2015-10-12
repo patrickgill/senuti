@@ -53,12 +53,12 @@
 	return nil;
 }
 
-+ (struct _NSRect)frameRectForContentRect:(struct _NSRect)fp8 styleMask:(unsigned int)fp24 {
++ (NSRect)frameRectForContentRect:(NSRect)fp8 styleMask:(unsigned int)fp24 {
 	fp8.size.width += 2;
 	fp8.size.height += 2;
 	return fp8;
 }
-+ (struct _NSRect)contentRectForFrameRect:(struct _NSRect)fp8 styleMask:(unsigned int)fp24 {
++ (NSRect)contentRectForFrameRect:(NSRect)fp8 styleMask:(unsigned int)fp24 {
 	fp8.size.width -= 2;
 	fp8.size.height -= 2;
 	return fp8;

@@ -70,8 +70,8 @@
 		8B36C68C0A87CC45002AA9F5 /* AIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AIViewAdditions.h; path = Source/AIViewAdditions.h; sourceTree = "<group>"; };
 		8B36C68D0A87CC45002AA9F5 /* AIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AIViewAdditions.m; path = Source/AIViewAdditions.m; sourceTree = "<group>"; };
 		8B36C7A00A87D08B002AA9F5 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = Resources/MainMenu.nib; sourceTree = "<group>"; };
-		8B36C7A60A87D099002AA9F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = Info.plist; path = Other/Info.plist; sourceTree = "<group>"; };
-		8B36C7AE0A87D0A2002AA9F5 /* Reporter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "Reporter-Info.plist"; path = "Other/Reporter-Info.plist"; sourceTree = "<group>"; };
+		8B36C7A60A87D099002AA9F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = Other/Info.plist; sourceTree = "<group>"; };
+		8B36C7AE0A87D0A2002AA9F5 /* Reporter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "Reporter-Info.plist"; path = "Other/Reporter-Info.plist"; sourceTree = "<group>"; };
 		8B36C7B70A87D0D2002AA9F5 /* CrashReporter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CrashReporter_Prefix.pch; path = Other/CrashReporter_Prefix.pch; sourceTree = "<group>"; };
 		8B36C7D00A87D160002AA9F5 /* atos */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = atos; path = Resources/atos; sourceTree = "<group>"; };
 		8B36D0F10A896532002AA9F5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -305,8 +305,11 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CrashReporter" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -483,23 +486,22 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.11;
 			};
 			name = Release;
 		};

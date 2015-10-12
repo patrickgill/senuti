@@ -15,7 +15,7 @@
  */
 
 #import "LXMobile.h"
-#import "itdb_private.h"
+#import "itdb.h"
 
 NSString *LXMobileDeviceConnectedNotification = @"LXMobileDeviceConnectedNotification";
 NSString *LXMobileDeviceDisconnectedNotification = @"LXMobileDeviceDisconnectedNotification";

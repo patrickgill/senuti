@@ -16,7 +16,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MobileDevice.h"
-#import "itdb.h"
+#import "itdb_private.h"
 
 @interface LXMobile : NSObject {
 	struct am_device *device;

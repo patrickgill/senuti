@@ -805,8 +805,11 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 8B03055C08B8D252007EC1E7 /* Build configuration list for PBXProject "FSFramework" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -996,6 +999,7 @@
 		8B03055908B8D252007EC1E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1021,6 +1025,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FSFramework;
+				SDKROOT = macosx10.11;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = YES;
 			};
@@ -1029,6 +1034,7 @@
 		8B03055A08B8D252007EC1E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1051,6 +1057,7 @@
 					0x20000000,
 				);
 				PRODUCT_NAME = FSFramework;
+				SDKROOT = macosx10.11;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
@@ -1059,21 +1066,20 @@
 		8B03055D08B8D252007EC1E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
 		8B03055E08B8D252007EC1E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.11;
 			};
 			name = Release;
 		};

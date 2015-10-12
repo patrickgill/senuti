@@ -69,7 +69,7 @@
 			[[NSColor alternateSelectedControlColor] set];
 			NSRectFillUsingOperation(cellFrame,NSCompositeSourceOver);
 		} else {
-			[(id)super _drawHighlightWithFrame:cellFrame inView:controlView]; 
+			[super _drawHighlightWithFrame:cellFrame inView:controlView];
 		}
 	}
 	
